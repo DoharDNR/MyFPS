@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="exdn">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,118 +11,214 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav class="shadow rounded p-3">
-        <h1>My FPS</h1>
+    <nav class="shadow rounded p-3 text-bg-secondary">
+        <h1 style="margin: auto;">My FPS</h1>
+        <button class="tablink" onclick="openPage('PUBG', this)" id="defaultOpen">PUBG</button>
+        <button class="tablink" onclick="openPage('MHW', this)">Monster Hunter World: Iceborne</button>
     </nav>
 
     <br>
 
-    <section class="shadow rounded list-horizontal p-2">
-        <a href="#set-ultra" class="card card-size">
-            <div class="card-body">
-                <h5 class="card-title">PUBG</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Preset: Ultra, 1080p</h6>
-                <h6 class="card-subtitle mb-2 text-muted">Averate: 75fps</h6>
-                <p class="card-text">AMD Ryzen 5 3600</p>
-                <p class="card-text">32GB DDR4 3200mhz</p>
-                <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+    <div id="PUBG" class="tabcontent">
+        <section class="shadow rounded list-horizontal p-2">
+            <a href="#set-ultra" class="card card-size">
+                <div class="card-body">
+                    <h5 class="card-title">PUBG</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Preset: Ultra, 1080p</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Averate: 75fps</h6>
+                    <p class="card-text">AMD Ryzen 5 3600</p>
+                    <p class="card-text">32GB DDR4 3200mhz</p>
+                    <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+                </div>
+            </a>
+    
+            <a href="#set-high" class="card card-size">
+                <div class="card-body">
+                    <h5 class="card-title">PUBG</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Preset: High, 1080p</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Averate: 100fps</h6>
+                    <p class="card-text">AMD Ryzen 5 3600</p>
+                    <p class="card-text">32GB DDR4 3200mhz</p>
+                    <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+                </div>
+            </a>
+    
+            <a href="#set-medium" class="card card-size">
+                <div class="card-body">
+                    <h5 class="card-title">PUBG</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Preset: Medium, 1080p</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Averate: 120fps</h6>
+                    <p class="card-text">AMD Ryzen 5 3600</p>
+                    <p class="card-text">32GB DDR4 3200mhz</p>
+                    <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+                </div>
+            </a>
+    
+            <a href="#set-low" class="card card-size">
+                <div class="card-body">
+                    <h5 class="card-title">PUBG</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Preset: Low, 1080p</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Averate: 150fps</h6>
+                    <p class="card-text">AMD Ryzen 5 3600</p>
+                    <p class="card-text">32GB DDR4 3200mhz</p>
+                    <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+                </div>
+            </a>
+    
+            <a href="#set-verylow" class="card card-size">
+                <div class="card-body">
+                    <h5 class="card-title">PUBG</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Preset: Very Low, 1080p</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Averate: 160fps</h6>
+                    <p class="card-text">AMD Ryzen 5 3600</p>
+                    <p class="card-text">32GB DDR4 3200mhz</p>
+                    <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+                </div>
+            </a>
+        </section>
+    
+        <br>
+    
+        <section class="container shadow rounded list-vertical py-3">
+            <div class="card" id="set-ultra">
+                <div class="card-body">
+                    <h5 class="card-title center">Showcase PUBG Preset Ultra 1080p</h5>
+                    <iframe src="https://www.youtube.com/embed/iL9ZwwvSel8?si=8_V9JKhIzW-re0Ff" frameborder="0"></iframe>
+                </div>
             </div>
-        </a>
-
-        <a href="#set-high" class="card card-size">
-            <div class="card-body">
-                <h5 class="card-title">PUBG</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Preset: High, 1080p</h6>
-                <h6 class="card-subtitle mb-2 text-muted">Averate: 100fps</h6>
-                <p class="card-text">AMD Ryzen 5 3600</p>
-                <p class="card-text">32GB DDR4 3200mhz</p>
-                <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+    
+            <div class="card" id="set-high">
+                <div class="card-body">
+                    <h5 class="card-title center">Showcase PUBG Preset High 1080p</h5>
+                    <iframe src="https://www.youtube.com/embed/7OxDHwynr9M?si=ooOfvVtZ0T9qNrNi" frameborder="0"></iframe>
+                </div>
             </div>
-        </a>
-
-        <a href="#set-medium" class="card card-size">
-            <div class="card-body">
-                <h5 class="card-title">PUBG</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Preset: Medium, 1080p</h6>
-                <h6 class="card-subtitle mb-2 text-muted">Averate: 120fps</h6>
-                <p class="card-text">AMD Ryzen 5 3600</p>
-                <p class="card-text">32GB DDR4 3200mhz</p>
-                <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+    
+            <div class="card" id="set-medium">
+                <div class="card-body">
+                    <h5 class="card-title center">Showcase PUBG Preset Medium 1080p</h5>
+                    <iframe src="https://www.youtube.com/embed/ygyBkgYrXEw?si=URyj2s59CGK4ZpIw" frameborder="0"></iframe>
+                </div>
             </div>
-        </a>
-
-        <a href="#set-low" class="card card-size">
-            <div class="card-body">
-                <h5 class="card-title">PUBG</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Preset: Low, 1080p</h6>
-                <h6 class="card-subtitle mb-2 text-muted">Averate: 150fps</h6>
-                <p class="card-text">AMD Ryzen 5 3600</p>
-                <p class="card-text">32GB DDR4 3200mhz</p>
-                <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+    
+            <div class="card">
+                <div class="card-body" id="set-low">
+                    <h5 class="card-title center">Showcase PUBG Preset Low 1080p</h5>
+                    <iframe src="https://www.youtube.com/embed/8IlWaWqeN2Y?si=ClAeuztth1xi_j2I" frameborder="0"></iframe>
+                </div>
             </div>
-        </a>
-
-        <a href="#set-verylow" class="card card-size">
-            <div class="card-body">
-                <h5 class="card-title">PUBG</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Preset: Very Low, 1080p</h6>
-                <h6 class="card-subtitle mb-2 text-muted">Averate: 160fps</h6>
-                <p class="card-text">AMD Ryzen 5 3600</p>
-                <p class="card-text">32GB DDR4 3200mhz</p>
-                <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+    
+            <div class="card">
+                <div class="card-body" id="set-verylow">
+                    <h5 class="card-title center">Showcase PUBG Preset Very Low 1080p</h5>
+                    <iframe src="https://www.youtube.com/embed/CqpeibTU6PY?si=M3sC3PaLg9f-H-_G" frameborder="0"></iframe>
+                </div>
             </div>
-        </a>
-    </section>
-
-    <br>
-
-    <section class="container shadow rounded list-vertical py-3">
-        <div class="card" id="set-ultra">
-            <div class="card-body">
-                <h5 class="card-title center">Showcase PUBG Preset Ultra 1080p</h5>
-                <iframe src="https://www.youtube.com/embed/iL9ZwwvSel8?si=8_V9JKhIzW-re0Ff" frameborder="0"></iframe>
+    
+        </section>
+    
+        <div id="navbar">
+            <div class="nav-preset">
+                <a href="#set-ultra">Preset: Ultra</a>
+                <a href="#set-high">Preset: High</a>
+                <a href="#set-medium">Preset: Medium</a>
+                <a href="#set-low">Preset: Low</a>
+                <a href="#set-verylow">Preset: VeryLow</a>
             </div>
-        </div>
-
-        <div class="card" id="set-high">
-            <div class="card-body">
-                <h5 class="card-title center">Showcase PUBG Preset High 1080p</h5>
-                <iframe src="https://www.youtube.com/embed/7OxDHwynr9M?si=ooOfvVtZ0T9qNrNi" frameborder="0"></iframe>
-            </div>
-        </div>
-
-        <div class="card" id="set-medium">
-            <div class="card-body">
-                <h5 class="card-title center">Showcase PUBG Preset Medium 1080p</h5>
-                <iframe src="https://www.youtube.com/embed/ygyBkgYrXEw?si=URyj2s59CGK4ZpIw" frameborder="0"></iframe>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-body" id="set-low">
-                <h5 class="card-title center">Showcase PUBG Preset Low 1080p</h5>
-                <iframe src="https://www.youtube.com/embed/8IlWaWqeN2Y?si=ClAeuztth1xi_j2I" frameborder="0"></iframe>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-body" id="set-verylow">
-                <h5 class="card-title center">Showcase PUBG Preset Very Low 1080p</h5>
-                <iframe src="https://www.youtube.com/embed/CqpeibTU6PY?si=M3sC3PaLg9f-H-_G" frameborder="0"></iframe>
-            </div>
-        </div>
-
-    </section>
-
-    <div id="navbar">
-        <div class="nav-preset">
-            <a href="#set-ultra">Preset: Ultra</a>
-            <a href="#set-high">Preset: High</a>
-            <a href="#set-medium">Preset: Medium</a>
-            <a href="#set-low">Preset: Low</a>
-            <a href="#set-verylow">Preset: VeryLow</a>
         </div>
     </div>
+
+    <div id="MHW" class="tabcontent">
+        <section class="shadow rounded list-horizontal p-2">
+            <a href="#set-ultra" class="card card-size">
+                <div class="card-body">
+                    <h5 class="card-title">Monster Hunter World: Iceborne</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Preset: Highest, 1080p</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Averate: 60fps</h6>
+                    <p class="card-text">AMD Ryzen 5 3600</p>
+                    <p class="card-text">32GB DDR4 3200mhz</p>
+                    <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+                </div>
+            </a>
+    
+            <a href="#set-high" class="card card-size">
+                <div class="card-body">
+                    <h5 class="card-title">Monster Hunter World: Iceborne</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Preset: High, 1080p</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Averate: 80fps</h6>
+                    <p class="card-text">AMD Ryzen 5 3600</p>
+                    <p class="card-text">32GB DDR4 3200mhz</p>
+                    <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+                </div>
+            </a>
+    
+            <a href="#set-medium" class="card card-size">
+                <div class="card-body">
+                    <h5 class="card-title">Monster Hunter World: Iceborne</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Preset: Mid, 1080p</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Averate: 85fps</h6>
+                    <p class="card-text">AMD Ryzen 5 3600</p>
+                    <p class="card-text">32GB DDR4 3200mhz</p>
+                    <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+                </div>
+            </a>
+    
+            <a href="#set-low" class="card card-size">
+                <div class="card-body">
+                    <h5 class="card-title">Monster Hunter World: Iceborne</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Preset: Low, 1080p</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Averate: 90fps</h6>
+                    <p class="card-text">AMD Ryzen 5 3600</p>
+                    <p class="card-text">32GB DDR4 3200mhz</p>
+                    <p class="card-text">Nvidia GeForce RTX 3060 12GB</p>
+                </div>
+            </a>
+        </section>
+    
+        <br>
+    
+        <section class="container shadow rounded list-vertical py-3">
+            <div class="card" id="set-ultra">
+                <div class="card-body">
+                    <h5 class="card-title center">Showcase MHW Preset Highest 1080p</h5>
+                    <iframe src="https://www.youtube.com/embed/0C7ZAevukwk?si=Gp__SkvkAnDnkY_W" frameborder="0"></iframe>
+                </div>
+            </div>
+    
+            <div class="card" id="set-high">
+                <div class="card-body">
+                    <h5 class="card-title center">Showcase MHW Preset High 1080p</h5>
+                    <iframe src="https://www.youtube.com/embed/N8H1QggjZQM?si=n68WjXLtb_Hu1pTG" frameborder="0"></iframe>
+                </div>
+            </div>
+    
+            <div class="card" id="set-medium">
+                <div class="card-body">
+                    <h5 class="card-title center">Showcase MHW Preset Medium 1080p</h5>
+                    <iframe src="https://www.youtube.com/embed/ueAh3C_n2ck?si=pPNgFWedTpFWps8N" frameborder="0"></iframe>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-body" id="set-low">
+                    <h5 class="card-title center">Showcase MHW Preset Low 1080p</h5>
+                    <iframe src="https://www.youtube.com/embed/bSJWE6lz11c?si=VA4DqUhiMAwa7Od-" frameborder="0"></iframe>
+                </div>
+            </div>
+    
+        </section>
+    
+        <div id="navbar">
+            <div class="nav-preset">
+                <a href="#set-ultra">Preset: Ultra</a>
+                <a href="#set-high">Preset: High</a>
+                <a href="#set-medium">Preset: Medium</a>
+                <a href="#set-low">Preset: Low</a>
+                <a href="#set-verylow">Preset: VeryLow</a>
+            </div>
+        </div>
+    </div>
+
 
     <footer>
         <div>Create By <a href="https://www.instagram.com/gamersindodnr/">DNRDev</a></div>

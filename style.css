@@ -5,7 +5,6 @@
 
 body{
     padding: 10px;
-    background-color: #ffaaaa;
 }
 
 a{
@@ -50,6 +49,8 @@ footer{
 
 nav{
     background-color: white;
+    display: flex;
+    gap: 10px;
 }
 
 section{
@@ -106,3 +107,31 @@ iframe{
         height: 200px;
     }
 }
+
+/* ========================================================== */
+
+.tablink{
+    color: #555;
+    background-color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 15%;
+    transition: 0.3s;
+}
+
+.tablink:hover{
+    font-size: 20px;
+}
+
+.tabcontent{
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#PUBG {background-color: #ffc880; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+#MHW {background-color: #80e8ff; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
